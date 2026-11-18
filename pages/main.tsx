@@ -3,16 +3,15 @@ import { LaunchRampHome } from "../src/components/launch-ramp-home";
 import "../src/styles.css";
 
 const inquiryFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLScLqnFm_PQPJgjbNodHoEX1vWvKTxFg-6y21B35o0qKTOJZ3A/viewform";
+  "https://script.google.com/macros/s/AKfycbzkgE-YdMRrkfq6pIOa41oUSFpzgkoCAvwO832lVh-KEZJnWT352lj4u44USRel93k5/exec";
 
 function InquiryForm() {
   return (
     <div className="min-w-0">
       <iframe
-        src={`${inquiryFormUrl}?embedded=true`}
+        src={inquiryFormUrl}
         title="Launch Ramp Website Inquiry"
-        className="w-full rounded-2xl border-0 bg-white"
-        height={1006}
+        className="block h-[520px] w-full rounded-2xl border-0 bg-[#101624] sm:h-[484px]"
         loading="lazy"
       />
       <a

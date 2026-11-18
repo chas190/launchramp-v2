@@ -20,6 +20,6 @@ The TanStack Start app includes the original server-backed inquiry form. Configu
 bun run build:pages
 ```
 
-The output is `dist-pages/`. It uses relative asset paths so it works at the repository's GitHub Pages URL. The Pages contact section embeds a published Google Form. Google Forms writes responses to its linked Google Sheet, and the sheet sends an immediate email notification for each new response. Update the public responder URL in `pages/main.tsx` if the form is replaced.
+The output is `dist-pages/`. It uses relative asset paths so it works at the repository's GitHub Pages URL. The Pages contact section embeds the Launch Ramp Inquiry Service web app. The service saves each submission to the Website Inquiries tab of the lead spreadsheet, then sends an email alert with the inquiry details. Update the public web app URL in `pages/main.tsx` if the service is replaced.
 
 To publish, push this source to the `main` branch of a public GitHub repository. In the repository, choose **Settings → Pages → Source → GitHub Actions**. Under **Actions**, run **Deploy Launch Ramp to GitHub Pages** if it has not run successfully. The deployment job links to the public site.
