@@ -131,9 +131,9 @@ export function LaunchRampHome({ contact }: { contact: ReactNode }) {
         </p>
       </section>
 
-      <section id="contact" className="scroll-mt-24 px-5 pb-20">
+      <section id="contact" className="scroll-mt-24 px-5 pb-12">
         <div className="mx-auto max-w-5xl rounded-3xl bg-heat-soft p-[2px]">
-          <div className="grid gap-10 rounded-3xl bg-background px-6 py-10 md:grid-cols-[0.85fr_1.15fr] md:items-center md:p-10">
+          <div className="grid gap-6 rounded-[calc(1.5rem-2px)] bg-background px-5 py-6 md:grid-cols-[0.85fr_1.15fr] md:items-center md:px-8">
             <div className="text-center md:text-left">
               <p className="text-sm font-bold uppercase tracking-widest text-heat">Contact Launch Ramp</p>
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Ready for liftoff?</h2>
