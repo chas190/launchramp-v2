@@ -1,5 +1,6 @@
 import { Layers, Map, Sparkles, TrendingUp, type LucideIcon } from "lucide-react";
 import type { ReactNode } from "react";
+import aisteinLogo from "../assets/aistein-card.webp";
 import logo from "../assets/launchramp-logo.png";
 
 const pillars: { t: string; d: string; icon: LucideIcon }[] = [
@@ -90,6 +91,35 @@ export function LaunchRampHome({ contact }: { contact: ReactNode }) {
                 <p className="mt-2 text-muted-foreground">{s.d}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="aistein" aria-labelledby="aistein-heading" className="scroll-mt-24 px-5 pt-12 sm:pt-16">
+        <div className="mx-auto max-w-5xl rounded-3xl bg-[linear-gradient(115deg,#147be3_0%,#32c9ff_29%,#79d831_55%,#ffc34c_79%,#ff7917_100%)] p-[2px]">
+          <div className="grid items-center gap-6 rounded-[calc(1.5rem-2px)] bg-background p-5 sm:grid-cols-[minmax(0,12rem)_minmax(0,1fr)] sm:gap-8 sm:p-7 md:grid-cols-[minmax(0,14rem)_minmax(0,1fr)]">
+            <img
+              src={aisteinLogo}
+              alt="Aistein portrait and logo"
+              width={560}
+              height={560}
+              loading="lazy"
+              decoding="async"
+              className="mx-auto aspect-square w-40 rounded-2xl object-contain sm:w-full"
+            />
+            <div>
+              <h2 id="aistein-heading" className="text-3xl font-bold text-foreground md:text-4xl">
+                Aistein
+              </h2>
+              <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                Aistein is the AI governance layer within the STEP Platform. It coordinates AI
+                officers and specialist agents alongside human leaders to spot gaps in talent,
+                technology, and resources. Growing companies can pair that support with fractional
+                executives to forecast cash flow, prioritize technology investments, and turn growth
+                plans into work their teams can deliver. Human leaders set the priorities and make
+                the decisions.
+              </p>
+            </div>
           </div>
         </div>
       </section>
