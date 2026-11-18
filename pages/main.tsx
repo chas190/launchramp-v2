@@ -2,17 +2,31 @@ import { createRoot } from "react-dom/client";
 import { LaunchRampHome } from "../src/components/launch-ramp-home";
 import "../src/styles.css";
 
-function InquiryStatus() {
+const inquiryFormUrl =
+  "https://docs.google.com/forms/d/e/1FAIpQLScLqnFm_PQPJgjbNodHoEX1vWvKTxFg-6y21B35o0qKTOJZ3A/viewform";
+
+function InquiryForm() {
   return (
-    <aside className="rounded-2xl border border-border bg-card/60 p-5 shadow-glow">
-      <h3 className="text-xl font-bold">Online inquiries are unavailable on this site</h3>
-      <p className="mt-3 text-muted-foreground">
-        The Launch Ramp inquiry form will be available when a submission service is connected.
-      </p>
-    </aside>
+    <div className="min-w-0">
+      <iframe
+        src={`${inquiryFormUrl}?embedded=true`}
+        title="Launch Ramp Website Inquiry"
+        className="w-full rounded-2xl border-0 bg-white"
+        height={1006}
+        loading="lazy"
+      />
+      <a
+        className="mt-3 inline-flex min-h-11 items-center text-sm text-heat-2 underline"
+        href={inquiryFormUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open the inquiry form in a new tab
+      </a>
+    </div>
   );
 }
 
 createRoot(document.getElementById("root")!).render(
-  <LaunchRampHome contact={<InquiryStatus />} />,
+  <LaunchRampHome contact={<InquiryForm />} />,
 );
